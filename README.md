@@ -1,53 +1,45 @@
 # IndigoPorteau (formerly OldAmber)
 [![Listed on Decomp Buddy](https://decompbuddy.com/badge.svg)](https://decompbuddy.com/games/pokemon-red-blue-oldamber-game-boy)
-A native C port of the Poke RBY Generation 1 engine, playable from the title
-screen to the Hall of Fame.
+
+
+A native port of the Generation 1 PKMN engine, written in C.
 
 **[Download the latest release](https://github.com/spiritsnails/indigoporteau/releases/latest)**
 &nbsp;&middot;&nbsp;
-**[Join the Discord](https://discord.gg/2pZNRp6t8)**
+**[Join the Discord](https://discord.gg/bCHefnYyth)**
 
-Behaviour follows the 1996 release closely. Damage and catch rates, status
-effects, move dispatch, trainer decisions and text timing are transcribed from
-the original rather than approximated, quirks included, because rounding any of
-it off is what makes a port feel wrong.
+Behavior follows the original games extremely closely, and aims for an eventual 100% coverage. Guaranteed the most accurate port of these games currently released. Damage and catch rates, status
+effects, move dispatch, trainer decisions and text timing are transcribed from the original rather than approximated, quirks included.
 
-How far that carries into the famous edge cases varies. Some fall out of the
-arithmetic on their own. Others lean on Game Boy behaviour this port does not
-have, and reproducing them is a goal rather than a promise. If one you know
-should work does not, that is worth an issue.
+How far that carries into the famous edge cases varies. Some fall out of the arithmetic on their own. Others lean on Game Boy behavior that this port does not have. However, significant progress has been made on some of the most famous glitches - and coverage is expanding every day. 
 
 ## Bugs and feature requests
 
 Found something that behaves incorrectly, crashes, or will not start?
-**[Report a bug](https://github.com/spiritsnails/IndigoPorteau/issues/new?template=bug_report.yml)**
+**[Report a bug](https://github.com/spiritsnails/indigoporteau/issues/new?template=bug_report.yml)**
 with your platform, version, and the steps needed to reproduce it.
 
 Have an idea that would improve IndigoPorteau?
-**[Request a feature](https://github.com/spiritsnails/IndigoPorteau/issues/new?template=feature_request.yml)**
+**[Request a feature](https://github.com/spiritsnails/indigoporteau/issues/new?template=feature_request.yml)**
 and explain what you would like, why it would be useful, and how you imagine it
 working. Questions and general conversation are still best suited to the
-[Discord](https://discord.gg/2pZNRp6t8).
+[Discord](https://discord.gg/bCHefnYyth).
 
 ## You supply your own legally acquired ROM
 
-This repository holds the engine and the extractors. The graphics, music, text,
-maps and stat tables come out of a cartridge dump you already own, read once on
+This repository contains only the engine and extractors. The graphics, music, text,
+maps and stat tables come out of the users legally owned ROM, read once on
 your own machine the first time you run the game. Your ROM is opened read-only
 and stays where it is.
 
-Poke Red and Blue are both supported. The launcher lists whichever versions are
-present and you pick one.
+Red and Blue are both supported, Yellow is in active development but has not been thoroughly tested, and thus is not ready for release. 
+The launcher lists whichever versions are present and you pick one.
 
 ## How to play
 
 Run the game. The launcher opens, asks for a ROM, builds the game data in a few
 seconds, and hands you a PLAY button. That happens once, and afterwards the
 launcher opens straight to PLAY.
-
-The launcher also holds RE-IMPORT A ROM for rebuilding the data after a bad
-extraction or an update, and SWITCH SAVE FILE for keeping several games without
-overwriting anything. It is drivable end to end with a game controller.
 
 Windows, macOS and Linux are supported. macOS builds are universal, covering
 Apple Silicon and Intel. Linux ships as an AppImage that carries its own
@@ -289,17 +281,14 @@ into, they use the platform's own location: Application Support on macOS, or
 the app data directory inside a Flatpak. The game reports that content
 directory in `pokered_log.txt` on the first line.
 
-## Not implemented
+## FUTURE PLANS
 
 Trading and link battles are absent for now. Online battles and trades are
 planned. Everything else in the mainline single-player game is playable.
 
-An expansion layer to the modding and authorship layer is planned for a later
-date. The main goal currently is to get the base layer of the project faithful
-and bug free. The engine is already built with modding and authorship in mind,
-but my current focus has still been on getting this feeling exactly like you
-remember. If you're a developer, take a look at the scene / block architecture
-to see what I mean.
+An expansion layer to the modding and authorship layer is currently in development. The main goal is to make anything that is an easy data swap easily accessible to essentially anyone with the will and drive to make a modded version of the game, and eventually entirely new games in the engine. The engine surfaces scripting, event flags, maps, wild encounters, trainer party data, in-game quotes, and more in an easily accessible editor or plain text files. Barring anything that requires new behavior to be implemented, a dedicated novice will be able to make entirely new games with next to no formal coding knowledge.
+
+Support is being added for the 6 official languages the games released in, directly from a legally-owned ROM of the game from the region of the language's origin. Spanish is complete, the other 4 are actively being worked on. An accessible front-end for fan translations is also being developed, but I myself will not be doing any fan translation, and certainly won't release any AI generated translations, for multiple reasons. Users passionate about being able to play the game in their native language will be able to edit all in-game text strings in an easy to use frontend.
 
 ## Thanks
 
