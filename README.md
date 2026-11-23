@@ -8,7 +8,7 @@ A native port of the Generation 1 PKMN engine, written in C.
 &nbsp;&middot;&nbsp;
 **[Join the Discord](https://discord.gg/bCHefnYyth)**
 
-Behavior follows the original games extremely closely, and aims for an eventual 100% coverage. Guaranteed the most accurate port of these games currently released. Damage and catch rates, status
+Behavior follows the original games extremely closely, and aims for an eventual 100% coverage. The only port that actually FEELS like Red/Blue. Damage and catch rates, status
 effects, move dispatch, trainer decisions and text timing are transcribed from the original rather than approximated, quirks included.
 
 How far that carries into the famous edge cases varies. Some fall out of the arithmetic on their own. Others lean on Game Boy behavior that this port does not have. However, significant progress has been made on some of the most famous glitches - and coverage is expanding every day. 
