@@ -1,9 +1,9 @@
-# OldAmber
-
+# IndigoPorteau (formerly OldAmber)
+[![Listed on Decomp Buddy](https://decompbuddy.com/badge.svg)](https://decompbuddy.com/games/pokemon-red-blue-oldamber-game-boy)
 A native C port of the Poke RBY Generation 1 engine, playable from the title
 screen to the Hall of Fame.
 
-**[Download the latest release](https://github.com/spiritsnails/oldamber/releases/latest)**
+**[Download the latest release](https://github.com/spiritsnails/indigoporteau/releases/latest)**
 &nbsp;&middot;&nbsp;
 **[Join the Discord](https://discord.gg/2pZNRp6t8)**
 
@@ -20,11 +20,11 @@ should work does not, that is worth an issue.
 ## Bugs and feature requests
 
 Found something that behaves incorrectly, crashes, or will not start?
-**[Report a bug](https://github.com/spiritsnails/oldamber/issues/new?template=bug_report.yml)**
+**[Report a bug](https://github.com/spiritsnails/IndigoPorteau/issues/new?template=bug_report.yml)**
 with your platform, version, and the steps needed to reproduce it.
 
-Have an idea that would improve OldAmber?
-**[Request a feature](https://github.com/spiritsnails/oldamber/issues/new?template=feature_request.yml)**
+Have an idea that would improve IndigoPorteau?
+**[Request a feature](https://github.com/spiritsnails/IndigoPorteau/issues/new?template=feature_request.yml)**
 and explain what you would like, why it would be useful, and how you imagine it
 working. Questions and general conversation are still best suited to the
 [Discord](https://discord.gg/2pZNRp6t8).
@@ -278,8 +278,8 @@ border with monochromatic palettes.
 ## Where your data lives
 
 On Windows, progression saves, save-state slots, backups and settings live in
-`%APPDATA%\spiritsnails\OldAmber\`. The first build using this location copies
-any existing files from beside `OldAmber.exe` automatically, without deleting
+`%APPDATA%\spiritsnails\IndigoPorteau\`. The first build using this location copies
+any existing files from beside `IndigoPorteau.exe` automatically, without deleting
 or overwriting either copy. That means the game folder can be replaced for an
 update without moving the save by hand.
 
