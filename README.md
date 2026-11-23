@@ -250,12 +250,20 @@ the [Debug CLI command guide](DEBUG_CLI.md).
 
 ## Presentation
 
+<p align="center">
+  <img width="512" height="448" alt="image" src="https://github.com/user-attachments/assets/d7fc43a9-3f34-41ae-8ed5-0608ebb484f0" />
+</p>
+
 The game can be played in a myriad of different presentation styles. You can
 run it in a monochrome palette at 10:9 with ghosting and an LCD simulator on
 top, or you can run it in 16:9 with no filter and no ghosting, for a clean
 modern style. You can basically mix and match any presentation style, and come
 up with new ones that did not really exist, like a 16:9 CRT TV, or the SGB
 border with monochromatic palettes.
+
+<p align="center">
+  <img width="336" height="144" alt="image" src="https://github.com/user-attachments/assets/05a770b0-8ec5-4914-a9db-6110b6e5d88b" />
+</p>
 
 - **Widescreen**, an optional 16:9 frame showing more of the map either side at
   the same scale, with the player centred.
@@ -266,6 +274,12 @@ border with monochromatic palettes.
 - **Save states**, six slots with thumbnails, alongside the in-game save.
 - Speed control, palette and colour-curve options, and a Game Boy Color style
   colour layer that can be switched off for the original monochrome.
+
+<p align="center">
+  <img width="160" height="144" alt="image" src="https://github.com/user-attachments/assets/23d149c1-5d29-4d69-953b-93e5c2ee1d47" />
+  <img width="160" height="144" alt="image" src="https://github.com/user-attachments/assets/73300e12-6318-4174-af03-eb327a1e0899" />
+  <img width="160" height="144" alt="image" src="https://github.com/user-attachments/assets/a90c5b47-ee87-4ac3-9021-0e8624cf3a9f" />
+</p>
 
 ## Where your data lives
 
